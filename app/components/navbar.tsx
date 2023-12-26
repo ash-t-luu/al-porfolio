@@ -1,4 +1,4 @@
-import { ToggleMode } from "./light-dark-toggle"
+import { ToggleMode } from "../utils/light-dark-toggle"
 import * as React from "react"
 import Link from "next/link"
 

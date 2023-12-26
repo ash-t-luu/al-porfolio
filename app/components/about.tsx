@@ -1,5 +1,7 @@
 import React from "react"
 import Image from "next/image"
+import changeColors from "../utils/colorChange"
+import SkillItem from "../utils/colorChange"
 
 const skills = [
     { skill: "HTML" },
@@ -73,12 +75,7 @@ const AboutSection = () => {
                         <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
                             {skills.map((item, idx) => {
                                 return (
-                                    <p
-                                        key={idx}
-                                        className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                                    >
-                                        {item.skill}
-                                    </p>
+                                    <SkillItem skill={item.skill} key={idx} idx={idx} />
                                 )
                             })}
                             {/* <div>
@@ -102,13 +99,6 @@ const AboutSection = () => {
                             </div> */}
 
                         </div>
-                        {/* <Image
-              src="/hero-image.png"
-              alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            /> */}
                     </div>
                 </div>
             </div>
