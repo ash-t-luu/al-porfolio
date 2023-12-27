@@ -33,10 +33,10 @@ const skills: Skill[] = [
 const AboutSection = (): JSX.Element => {
     return (
         <section id="about">
-            <div className="my-12 pb-12 md:pt-28 md:pb-48">
-                <h1 className="text-center font-bold text-4xl">
+            <div className="my-12 pb-12 md:pt-28 md:pb-40">
+                <h1 className="text-center font-bold text-4xl pb-6">
                     About Me
-                    <hr className="w-6 h-1 mx-auto my-4 bg-emerald-500 border-0 rounded"></hr>
+                    <hr className="w-6 h-1 mx-auto my-4 bg-emerald-500 border-0 rounded mt-5"></hr>
                 </h1>
 
                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
