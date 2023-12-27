@@ -6,7 +6,7 @@ import { Suspense } from "react";
 
 export default async function Home(): Promise<{}> {
   // change the entry point of url to the domain of where i will be hosting this
-  const result = await fetch('http://localhost:3002/projects.json', { cache: "force-cache" });
+  const result = await fetch('http://localhost:3000/projects.json', { cache: "force-cache" });
 
   if (!result.ok) {
     throw new Error(`Failed to fetch projects. Status: ${result.status}`);
