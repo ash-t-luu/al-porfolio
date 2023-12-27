@@ -14,6 +14,7 @@ const HeroSection = (): JSX.Element => {
                         width={325}
                         height={325}
                         className="rounded-full shadow-2xl"
+                        priority={true}
                     />
                 </div>
                 <div className="md:mt-2 md:w-3/5">
