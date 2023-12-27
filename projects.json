@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "React Labyrinth",
+        "description": "VSCode Extension to visualize component type hierarchy tree,assist in the transition of React Server Components, and data analysis of SEO and FCP",
+        "github": "https://github.com/oslabs-beta/React-Labyrinth"
+    },
+    {
+        "id": "2",
+        "name": "Recipe Roulette V.2",
+        "description": "Iteration of RecipeRoulette, a Recipe Sharing Application. Integration of user profile with ability to star favorite recipes, access nutritional labels, and search by ingredient.",
+        "github": "https://github.com/ash-t-luu/RecipeRouletteV.2"
+    },
+    {
+        "id": "3",
+        "name": "Co-Sync",
+        "description": "Co-Sync is a SCRUM app, our goal is to help teams efficiently and seamlessly manage their projects and tickets through teamwork and collaboration.",
+        "github": "https://github.com/ash-t-luu/Co-Sync"
+    },
+    {
+        "id": "4",
+        "name": "Pet Health Online",
+        "description": "Pet Health Online is a web application that allows you to view your pet's health records and vaccination due dates. Supports one-to-many relationships for owners and multiple pets.",
+        "github": "https://github.com/ash-t-luu/Pet-Health-Online"
+    },
+    {
+        "id": "4",
+        "name": "To-Do List",
+        "description": "To-do List using DOM Manipulation with implementation of Google OAuth.",
+        "github": "https://github.com/ash-t-luu/to-do-list"
+    }
+]
