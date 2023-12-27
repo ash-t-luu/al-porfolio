@@ -1,7 +1,11 @@
 import React from "react"
-import Image from "next/image"
+import SkillItem from "./skill-item"
 
-const skills = [
+type Skill = {
+    skill: string
+}
+
+const skills: Skill[] = [
     { skill: "HTML" },
     { skill: "CSS" },
     { skill: "JavaScript" },
@@ -26,7 +30,7 @@ const skills = [
     { skill: "Github Actions" },
 ]
 
-const AboutSection = () => {
+const AboutSection = (): JSX.Element => {
     return (
         <section id="about">
             <div className="my-12 pb-12 md:pt-28 md:pb-48">
@@ -46,25 +50,19 @@ const AboutSection = () => {
                         </p>
                         <br />
                         <p>
-                            I graduated from California State University, Long Beach in 2022
-                            with a BA in History. I transitioned from working in the events industry to the tech industry, focusing on software engineering and development. I graduated from a Coding Advanced Immersive Program, and have been working towards my goals in the tech industry since.
+                            My journey began at California State University, Long Beach, where I earned a BA in History in 2022. I shifted gears from the events industry to immerse myself in the world of software engineering. Embracing a rapid learning curve, I successfully completed a Coding Advanced Immersive Program, paving the way for my transition into the tech sphere.
                         </p>
                         <br />
                         <p>
-                            I have a wide range of hobbies and passions that keep me busy.
-                            From playing guitar, reading upon the latest tech trends, and traveling,
-                            I am always seeking new experiences and love to keep myself
-                            engaged and learning new things.
+                            Beyond code and algorithms, I find joy in a spectrum of hobbies that enrich my life. Whether strumming melodies on my guitar, delving into the latest tech trends, or embarking on travel adventures, I am a firm believer in embracing diverse experiences and fostering continuous personal and professional growth.
                         </p>
                         <br />
                         <p>
-                            I believe that you should{" "}
-                            <span className="font-bold text-teal-500">
-                                never stop growing
+                            I am committed to unraveling my {" "}
+                            <span className="font-bold text-emerald-500">
+                                boundless potential and passion
                             </span>{" "}
-                            and that&#39;s what I strive to do, I have a passion for
-                            technology and a desire to always push the limits of what is
-                            possible. I am excited to see where my career takes me and am
+                            within the dynamic tech realm. I am excited to see where my career takes me and am
                             always open to new opportunities. 🙂
                         </p>
                     </div>
@@ -73,42 +71,10 @@ const AboutSection = () => {
                         <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
                             {skills.map((item, idx) => {
                                 return (
-                                    <p
-                                        key={idx}
-                                        className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                                    >
-                                        {item.skill}
-                                    </p>
+                                    <SkillItem skill={item.skill} key={idx} idx={idx} />
                                 )
                             })}
-                            {/* <div>
-
-                                <img src='https://skillicons.dev/icons?i=js,html,css,nextjs,react,ts,redux,jquery,babel,tailwind,sass,styledcomponents' alt='tech-stack-logos' width={200} height={200} />
-                            </div>
-
-                            <div>
-
-                                <img src='https://skillicons.dev/icons?i=docker,aws,githubactions' alt='tech-stack-logos' width={200} height={200} />
-                            </div>
-
-                            <div>
-
-                                <img src='https://skillicons.dev/icons?i=nodejs,postgres,mongodb,express,webpack' alt='tech-stack-logos' width={200} height={200} />
-                            </div>
-
-                            <div>
-
-                                <img src='https://skillicons.dev/icons?i=,git,bash,linux,powershell,vscode,github,' alt='tech-stack-logos' width={200} height={200} />
-                            </div> */}
-
                         </div>
-                        {/* <Image
-              src="/hero-image.png"
-              alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            /> */}
                     </div>
                 </div>
             </div>

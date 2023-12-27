@@ -4,9 +4,9 @@ import * as React from "react"
 import { RiSunLine, RiMoonFill } from "react-icons/ri"
 import { useTheme } from "next-themes"
 
-export const ToggleMode = () => {
+export const ToggleMode = (): JSX.Element => {
     const { systemTheme, theme, setTheme } = useTheme();
-    const currentTheme = theme === "system" ? systemTheme : theme;
+    const currentTheme: string | undefined = theme === "system" ? systemTheme : theme;
     return (
         <div>
             {currentTheme === "dark" ? (
@@ -26,4 +26,4 @@ export const ToggleMode = () => {
             )}
         </div>
     )
-}
+};
