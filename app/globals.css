@@ -5,3 +5,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
+@layer base {
+  body {
+    @apply dark:bg-neutral-900
+  }
+}

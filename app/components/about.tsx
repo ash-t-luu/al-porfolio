@@ -33,7 +33,7 @@ const skills: Skill[] = [
 const AboutSection = (): JSX.Element => {
     return (
         <section id="about">
-            <div className="my-12 pb-12 md:pt-28 md:pb-40">
+            <div className="mt-12 pb-12 md:pt-28">
                 <h1 className="text-center font-bold text-4xl pb-6">
                     About Me
                     <hr className="w-6 h-1 mx-auto my-4 bg-emerald-500 border-0 rounded mt-5"></hr>
@@ -59,7 +59,7 @@ const AboutSection = (): JSX.Element => {
                         <br />
                         <p>
                             I am committed to unraveling my {" "}
-                            <span className="font-bold text-emerald-500">
+                            <span className="font-bold text-violet-400">
                                 boundless potential and passion
                             </span>{" "}
                             within the dynamic tech realm. I am excited to see where my career takes me and am
