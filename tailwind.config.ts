@@ -9,6 +9,7 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
         bounce: "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
       },

@@ -17,3 +17,32 @@ html {
     @apply dark:bg-zinc-800
   }
 }
+
+input+span {
+  position: relative;
+}
+
+input+span::before {
+  position: absolute;
+  right: -30px;
+  top: 2px;
+}
+
+/* Show red border only when input is invalid and focused */
+input:invalid:focus {
+  border: 1px solid red;
+}
+
+/* Show red '✖' only when input is invalid and focused */
+input:invalid:focus+span::before {
+  /* content: "✖"; */
+  content: '❌';
+  color: red;
+}
+
+/* Show green '✓' when input is valid */
+input:valid+span::before {
+  /* content: "✓"; */
+  content: '✔️';
+  color: green;
+}
