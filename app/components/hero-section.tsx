@@ -11,8 +11,8 @@ const HeroSection = (): JSX.Element => {
                     <Image
                         src="/al-headshot.jpg"
                         alt=""
-                        width={325}
-                        height={325}
+                        width={320}
+                        height={320}
                         className="rounded-full shadow-2xl"
                         priority={true}
                     />
@@ -23,7 +23,7 @@ const HeroSection = (): JSX.Element => {
                     </h1>
                     <p className="text-lg mt-4 mb-6 md:text-2xl">
                         I&#39;m a{" "}
-                        <span className="font-semibold text-emerald-500">
+                        <span className="font-semibold text-violet-400">
                             Software Engineer{" "}
                         </span>
                         based in Orange County, CA. Working towards creating software that
