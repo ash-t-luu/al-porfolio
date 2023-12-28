@@ -44,7 +44,7 @@ export const NavBar = (): JSX.Element => {
                             return (
                                 <Link
                                     key={idx}
-                                    href={item.page}
+                                    href={`/${item.page}`}
                                     scroll={true}
                                 >
                                     {item.label}
@@ -55,6 +55,6 @@ export const NavBar = (): JSX.Element => {
                     </div>
                 </div>
             </div>
-        </header>
+        </header >
     );
 }
