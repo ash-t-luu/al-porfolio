@@ -26,13 +26,13 @@ const NAV_ITEMS: Array<NavItem> = [
 
 export const NavBar = (): JSX.Element => {
     return (
-        <header className="w-full mx-auto  px-3 sm:px-20 fixed top-0 z-50 shadow border-white text-black bg-slate-50 dark:bg-zinc-800 dark:border-black dark:text-white">
+        <header className="w-full mx-auto  px-3 sm:px-20 fixed top-0 z-50 shadow border-white text-black bg-slate-50 dark:bg-zinc-700 dark:border-black dark:text-white">
             <div className="justify-between md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-4 md:block">
                         <Link href="/">
                             <div className="container flex items-center space-x-2">
-                                <h2 className="text-xl font-bold underline decoration-wavy decoration-indigo-500/40">Ashley Luu</h2>
+                                <h2 className="text-xl font-bold underline decoration-wavy decoration-indigo-500/40 dark:decoration-indigo-500">Ashley Luu</h2>
                             </div>
                         </Link>
                     </div>
