@@ -2,22 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-body {}
-
 html {
   scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
+@layer base {
+  body {
+    @apply dark:bg-zinc-800
+  }
+}
+
+input+span {
+  position: relative;
+}
+
+input+span::before {
+  position: absolute;
+  right: -30px;
+  top: 2px;
+}
+
+/* Show red border only when input is invalid and focused */
+input:invalid:focus {
+  border: 1px solid red;
+}
+
+/* Show red '✖' only when input is invalid and focused */
+input:invalid:focus+span::before {
+  /* content: "✖"; */
+  content: '❌';
+  color: red;
+}
+
+/* Show green '✓' when input is valid */
+input:valid+span::before {
+  /* content: "✓"; */
+  content: '✔️';
+  color: green;
+}
+
+
+.glow {
+  color: f0f0f0;
+  padding: none;
+  transition: 0.1s;
+}
+
+span.glow:hover {
+  text-shadow: 0 0 5px rgb(22 163 74);
 }
