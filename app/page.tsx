@@ -6,22 +6,28 @@ import { Suspense } from "react";
 
 export default async function Home(): Promise<{}> {
   // change the entry point of url to the domain of where i will be hosting this
-  const url = process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3000'
-    : `https://${process.env.VERCEL_URL}`;
+  async function getData() {
+    const url = process.env.NODE_ENV === 'development'
+      ? 'http://localhost:3000'
+      : `https://${process.env.VERCEL_URL}`;
 
-  const result = await fetch(url + `/projects.json`, { cache: "force-cache" });
+    const result = await fetch(url + `/projects.json`, { cache: "force-cache" });
 
-  if (!result.ok) {
-    console.log(`Failed to fetch projects. Status: ${result.status}`);
-    console.log('Response:', await result.text());
+    if (!result.ok) {
+      console.log(`Failed to fetch projects. Status: ${result.status}`);
+      console.log('Response:', await result.text());
+    }
+
+    const projectsData = await result.json();
+
+    if (!projectsData) {
+      console.log(`Failed to render projects. Status: ${projects.status}`);
+    }
+
+    return projectsData;
   }
 
-  const projects = await result.json();
-
-  if (!projects) {
-    console.log(`Failed to render projects. Status: ${projects.status}`);
-  }
+  const projects = await getData();
 
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
