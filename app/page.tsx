@@ -14,6 +14,7 @@ export default async function Home(): Promise<{}> {
 
   if (!result.ok) {
     console.log(`Failed to fetch projects. Status: ${result.status}`);
+    console.log('Response:', await result.text());
   }
 
   const projects = await result.json();
