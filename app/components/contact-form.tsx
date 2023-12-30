@@ -1,7 +1,6 @@
 'use client'
 
 import { FormEvent } from "react"
-import { BsCheckLg } from "react-icons/bs";
 
 type FormInput = {
     firstName: string;
@@ -10,11 +9,11 @@ type FormInput = {
     message: string;
 };
 
-interface ContactFormProps {
-    onSubmit: (formData: FormData) => Promise<Response>;
-}
+// interface ContactFormProps {
+//     onSubmit: (formData: FormData) => Promise<Response>;
+// }
 
-export const ContactForm = ({ onSubmit }: ContactFormProps) => {
+export const ContactForm = () => {
 
     async function handleSubmit(e: FormEvent) {
         e.preventDefault();
