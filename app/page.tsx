@@ -9,7 +9,7 @@ export default async function Home(): Promise<{}> {
   async function getData() {
     const url = process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : `https://${process.env.VERCEL_URL}`;
+      : `https://${process.env.API_URL}`;
 
     const result = await fetch(url + `/projects.json`, { cache: "force-cache" });
 
