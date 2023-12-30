@@ -8,7 +8,7 @@ export default async function Home(): Promise<{}> {
   // change the entry point of url to the domain of where i will be hosting this
   const url = process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : `${process.env.VERCEL_URL}`;
+    : `http://${process.env.VERCEL_URL}`;
 
   const result = await fetch(url + `/projects.json`, { cache: "force-cache" });
 
