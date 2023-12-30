@@ -33,7 +33,7 @@ const Contact: NextPage = () => {
 
     return (
         <div className='flex flex-col items-center justify-center pt-32 pb-16 mb-12'>
-            <a href="mailto:ashleyluu87@gmail.com?Subject=ContactForm" target="_top">Let's Connect!</a>
+            <a href="mailto:ashleyluu87@gmail.com?Subject=ContactForm" target="_top">Let&#39;s Connect!</a>
             {/* <ContactForm /> */}
         </div>
     );

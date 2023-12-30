@@ -3,7 +3,7 @@ export const Connect = () => {
     return (
         // <div className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
         <div className="flex flex-col items-center">
-            <h1>Let's Connect!</h1>
+            <h1>Let&#39;s Connect!</h1>
             <p>You can reach me at the links below</p>
             <a
                 href='https://www.linkedin.com/in/ashley-luu-98837620b/'
