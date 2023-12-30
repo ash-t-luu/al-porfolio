@@ -46,3 +46,14 @@ input:valid+span::before {
   content: '✔️';
   color: green;
 }
+
+
+.glow {
+  color: f0f0f0;
+  padding: none;
+  transition: 0.1s;
+}
+
+span.glow:hover {
+  text-shadow: 0 0 5px rgb(22 163 74);
+}

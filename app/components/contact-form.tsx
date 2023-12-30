@@ -52,7 +52,7 @@ export const ContactForm = () => {
                 <div className="mb-5">
                     <label
                         htmlFor="firstName"
-                        className='mb-3 block text-base font-medium text-black dark:text-neutral-100'
+                        className='mb-3 block text-base font-medium text-black dark:text-light'
                     >
                         First Name
                     </label>
@@ -70,7 +70,7 @@ export const ContactForm = () => {
                 <div className="mb-5">
                     <label
                         htmlFor="lastName"
-                        className='mb-3 block text-base font-medium text-black dark:text-neutral-100'
+                        className='mb-3 block text-base font-medium text-black dark:text-light'
                     >
                         Last Name
                     </label>
@@ -88,7 +88,7 @@ export const ContactForm = () => {
                 <div className="mb-5">
                     <label
                         htmlFor="email"
-                        className='mb-3 block text-base font-medium text-black dark:text-neutral-100'
+                        className='mb-3 block text-base font-medium text-black dark:text-light'
                     >
                         Email Address
                     </label>
@@ -116,8 +116,6 @@ export const ContactForm = () => {
                         name="message"
                         placeholder="Type your message..."
                         className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-                        maxLength={500}
-                        minLength={4}
                         required
                     ></textarea>
                 </div>
