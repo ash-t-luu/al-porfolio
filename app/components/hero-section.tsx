@@ -1,7 +1,11 @@
-import * as React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { HiArrowDown } from "react-icons/hi";
+import * as React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { HiArrowDown } from "react-icons/hi"
+import {
+    AiOutlineGithub,
+    AiOutlineLinkedin
+} from 'react-icons/ai'
 
 const HeroSection = (): JSX.Element => {
     return (
@@ -23,12 +27,32 @@ const HeroSection = (): JSX.Element => {
                     </h1>
                     <p className="text-lg mt-4 mb-6 md:text-2xl">
                         I&#39;m a{" "}
-                        <span className="font-semibold text-violet-400">
+                        <span className="font-semibold text-highlight">
                             Software Engineer{" "}
                         </span>
                         based in Orange County, CA. Working towards creating software that
                         makes life easier and more meaningful.
                     </p>
+                    <div className="flex flex-row items-center md:justify-start sm:justify-center space-x-2 mb-1">
+                        <a
+                            href='https://github.com/ash-t-luu'
+                            rel='noreferrer'
+                            target='_blank'
+                        >
+                            <AiOutlineGithub
+                                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-600 dark:text-light"
+                                size={30} />
+                        </a>
+                        <a
+                            href='https://www.linkedin.com/in/ashley-luu-98837620b/'
+                            rel='noreferrer'
+                            target='_blank'
+                        >
+                            <AiOutlineLinkedin
+                                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-600 dark:text-light"
+                                size={30} />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-row items-center text-center justify-center ">

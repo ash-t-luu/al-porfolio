@@ -18,10 +18,10 @@ const NAV_ITEMS: Array<NavItem> = [
         label: 'Projects',
         page: '#projects'
     },
-    {
-        label: "Contact",
-        page: "contact"
-    }
+    // {
+    //     label: "Contact",
+    //     page: "contact"
+    // }
 ];
 
 export const NavBar = (): JSX.Element => {
@@ -32,7 +32,7 @@ export const NavBar = (): JSX.Element => {
                     <div className="flex items-center justify-between py-3 md:py-4 md:block">
                         <Link href="/">
                             <div className="container flex items-center space-x-2">
-                                <h2 className="text-xl font-bold underline decoration-wavy decoration-indigo-500/40 dark:decoration-indigo-500">Ashley Luu</h2>
+                                <h2 className="text-xl font-bold underline decoration-wavy decoration-indigo-500/60 dark:decoration-indigo-500">Ashley Luu</h2>
                             </div>
                         </Link>
                     </div>
@@ -46,8 +46,9 @@ export const NavBar = (): JSX.Element => {
                                     key={idx}
                                     href={`/${item.page}`}
                                     scroll={true}
+                                    className="pr-2"
                                 >
-                                    {item.label}
+                                    <span className='glow'>{item.label}</span>
                                 </Link>
                             );
                         })}

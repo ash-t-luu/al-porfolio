@@ -11,7 +11,7 @@ export const ToggleMode = (): JSX.Element => {
     return (
         <div>
             <button
-                className="bg-slate-100 rounded-xl p-2"
+                className="bg-slate-200 rounded-xl p-2"
                 onClick={() => { currentTheme === 'dark' ? setTheme('light') : setTheme('dark') }}
             >
                 {currentTheme === 'dark' ? <RiSunLine size={20} color='black' /> : <RiMoonFill size={20} color="black" />}

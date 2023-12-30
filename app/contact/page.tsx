@@ -4,8 +4,6 @@ import { NextPage } from "next";
 import { ContactForm } from "../components/contact-form";
 // import { Resend } from "resend";
 
-// const resend = new Resend('re_W6VdCjAV_HDEon4VeRKmcXyb9Zui4tVkr');
-
 const Contact: NextPage = () => {
     // async function sendEmail(formData: FormData) {
 
@@ -35,7 +33,8 @@ const Contact: NextPage = () => {
 
     return (
         <div className='flex flex-col items-center justify-center pt-32 pb-16 mb-12'>
-            <ContactForm />
+            <a href="mailto:ashleyluu87@gmail.com?Subject=ContactForm" target="_top">Let's Connect!</a>
+            {/* <ContactForm /> */}
         </div>
     );
 }
