@@ -1,7 +1,7 @@
 'use client'
 
-import { URLSearchParams } from "next/dist/compiled/@edge-runtime/primitives/url";
 import { FormEvent } from "react"
+import { BsCheckLg } from "react-icons/bs";
 
 type FormInput = {
     firstName: string;
@@ -10,24 +10,36 @@ type FormInput = {
     message: string;
 };
 
-export const ContactForm = () => {
+interface ContactFormProps {
+    onSubmit: (formData: FormData) => Promise<Response>;
+}
+
+export const ContactForm = ({ onSubmit }: ContactFormProps) => {
+
     async function handleSubmit(e: FormEvent) {
         e.preventDefault();
         const form = e.currentTarget as HTMLFormElement;
-        const data: FormInput = new FormData(form);
-        console.log('data: ', data);
+        const data = new FormData(form);
+        const dataObject = Object.fromEntries(data);
+        console.log('data: ', dataObject);
 
         try {
-            const response = await fetch('/api/email', {
+            const response = await fetch('/api/send', {
                 method: 'POST',
-                body: JSON.stringify(data)
-            });
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ dataObject })
+            })
 
             if (!response.ok) {
                 throw new Error(`Invalid response from fetch: ${response.status}`);
             }
 
-            alert('Thanks for contacting me. I will get back to you soon!');
+            // await onSubmit(response);
+            console.log('response: ', response)
+            // alert('Thanks for contacting me. I will get back to you soon!');
+            form.reset();
         } catch (error) {
             console.error(error);
             alert('We cannot submit the form at the moment. Try again later.');
@@ -40,15 +52,15 @@ export const ContactForm = () => {
             <form method="post" onSubmit={handleSubmit}>
                 <div className="mb-5">
                     <label
-                        htmlFor="first-name"
+                        htmlFor="firstName"
                         className='mb-3 block text-base font-medium text-black dark:text-neutral-100'
                     >
                         First Name
                     </label>
                     <input
-                        id="first-name"
+                        id="firstName"
                         type="text"
-                        name="first-name"
+                        name="firstName"
                         placeholder="First Name"
                         className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
                         required
@@ -58,15 +70,15 @@ export const ContactForm = () => {
                 </div>
                 <div className="mb-5">
                     <label
-                        htmlFor="last-name"
+                        htmlFor="lastName"
                         className='mb-3 block text-base font-medium text-black dark:text-neutral-100'
                     >
                         Last Name
                     </label>
                     <input
-                        id="last-name"
+                        id="lastName"
                         type="text"
-                        name="last-name"
+                        name="lastName"
                         placeholder="Last Name"
                         className="w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md"
                         required
@@ -105,6 +117,8 @@ export const ContactForm = () => {
                         name="message"
                         placeholder="Type your message..."
                         className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
+                        maxLength={500}
+                        minLength={4}
                         required
                     ></textarea>
                 </div>
