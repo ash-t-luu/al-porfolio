@@ -2,32 +2,34 @@ import ProjectSection from "./components/project-section";
 import AboutSection from "./components/about";
 import HeroSection from "./components/hero-section";
 import { Suspense } from "react";
+import Data from "./utils/action"
 // replaces children prop in layout.tsx
 
-export default async function Home(): Promise<{}> {
+export default async function Home() {
   // change the entry point of url to the domain of where i will be hosting this
-  async function getData() {
-    const url = process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000'
-      : `https://${process.env.API_URL}`;
+  // async function getData() {
+  //   const url = process.env.NODE_ENV === 'development'
+  //     ? 'http://localhost:3000'
+  //     : `https://${process.env.API_URL}`;
 
-    const result = await fetch(url + `/projects.json`, { cache: "force-cache" });
+  //   const result = await fetch(url + `/projects.json`, { cache: "force-cache" });
 
-    if (!result.ok) {
-      console.log(`Failed to fetch projects. Status: ${result.status}`);
-      console.log('Response:', await result.text());
-    }
+  //   if (!result.ok) {
+  //     console.log(`Failed to fetch projects. Status: ${result.status}`);
+  //     console.log('Response:', await result.text());
+  //   }
 
-    const projectsData = await result.json();
+  //   const projectsData = await result.json();
 
-    if (!projectsData) {
-      console.log(`Failed to render projects. Status: ${projects.status}`);
-    }
+  //   if (!projectsData) {
+  //     console.log(`Failed to render projects. Status: ${projects.status}`);
+  //   }
 
-    return projectsData;
-  }
+  //   return projectsData;
+  // }
 
-  const projects = await getData();
+  // const projects = await getData();
+  const projects = await Data();
 
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
