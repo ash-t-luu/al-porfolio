@@ -18,10 +18,10 @@ const NAV_ITEMS: Array<NavItem> = [
         label: 'Projects',
         page: '#projects'
     },
-    // {
-    //     label: "Contact",
-    //     page: "contact"
-    // }
+    {
+        label: "Contact",
+        page: "contact"
+    }
 ];
 
 export const NavBar = (): JSX.Element => {

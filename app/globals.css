@@ -8,7 +8,7 @@ html {
 
 @layer base {
   body {
-    background-color: #f0f0f0;
+    background-color: #FCFCFC;
   }
 }
 
@@ -18,13 +18,35 @@ html {
   }
 }
 
+.content {
+  height: 46.875rem;
+}
+
+.contact {
+  background-image: url(../public/dots4.svg);
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 input+span {
   position: relative;
 }
 
 input+span::before {
   position: absolute;
-  right: -30px;
+  right: -25px;
   top: 2px;
 }
 
@@ -33,20 +55,17 @@ input:invalid:focus {
   border: 1px solid red;
 }
 
-/* Show red '✖' only when input is invalid and focused */
 input:invalid:focus+span::before {
   /* content: "✖"; */
   content: '❌';
   color: red;
 }
 
-/* Show green '✓' when input is valid */
 input:valid+span::before {
   /* content: "✓"; */
   content: '✔️';
   color: green;
 }
-
 
 .glow {
   color: f0f0f0;
