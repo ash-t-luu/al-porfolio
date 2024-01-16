@@ -51,7 +51,7 @@ const AboutSection = (): JSX.Element => {
                         </p>
                         <br />
                         <p>
-                            My journey began at California State University, Long Beach, where I earned a BA in History. I successfully completed a Coding Advanced Immersive Program, paving the way for my transition into the tech sphere. I'm adept at quickly learning new technologies and have experience in building web applications to create efficient, expansible user-curated experiences.
+                            My journey began at California State University, Long Beach, where I earned a BA in History. I successfully completed a Coding Advanced Immersive Program, paving the way for my transition into the tech sphere. I&#39;m adept at quickly learning new technologies and have experience in building web applications to create efficient, expansible user-curated experiences.
                         </p>
                         <br />
                         <p>
