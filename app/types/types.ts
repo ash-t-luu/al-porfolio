@@ -4,7 +4,3 @@ export type Project = {
     description: string;
     github: string;
 }
-
-export type ProjectProps = {
-    projects: Project[];
-}
