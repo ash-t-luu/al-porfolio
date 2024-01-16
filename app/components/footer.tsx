@@ -3,7 +3,6 @@ import {
     AiOutlineGithub,
     AiOutlineLinkedin
 } from 'react-icons/ai'
-import { Connect } from './connect';
 
 export const Footer = () => {
     return (
@@ -11,7 +10,7 @@ export const Footer = () => {
             <hr className='w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0'></hr>
             <div className='mx-auto p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between'>
                 <div className='flex flex-row items-center justify-center space-x-1 text-neutral-500 dark:text-light'>
-                    <a href='/' className='hover:no-underline'>@ 2023 Ashley Luu</a>
+                    <a href='/' className='hover:no-underline'>@ 2024 Ashley Luu</a>
                 </div>
                 <div className="flex flex-row items-center justify-center space-x-2 mb-1">
                     <a
@@ -24,7 +23,7 @@ export const Footer = () => {
                             size={30} />
                     </a>
                     <a
-                        href='https://www.linkedin.com/in/ashley-luu-98837620b/'
+                        href='https://www.linkedin.com/in/ashley-t-luu/'
                         rel='noreferrer'
                         target='_blank'
                     >

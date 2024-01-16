@@ -1,16 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { NavBar } from './components/navbar'
-import { ThemeProvider } from './components/theme-provider'
+import { ThemeProvider } from './utils/theme-provider'
 import { Footer } from './components/footer'
-import Providers from './components/toaster-provider'
-
-// const inter = Inter({ subsets: ['latin'] })
+import Providers from './utils/toaster-provider'
+import SectionScroll from './utils/reveal'
 
 export const metadata: Metadata = {
-  title: 'Ashley Luu - Personal Website',
-  description: 'Website for Ashley Luu Personal Portfolio',
+  title: 'AL | Portfolio',
+  description: 'Website for Ashley Luu Portfolio',
 }
 
 export default function RootLayout({
@@ -26,12 +24,12 @@ export default function RootLayout({
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange>
-          {/* <Providers> */}
-
-          <NavBar />
-          {children}
-          <Footer />
-          {/* </Providers> */}
+          <Providers>
+            <NavBar />
+            <SectionScroll />
+            {children}
+            <Footer />
+          </Providers>
         </ThemeProvider>
       </body>
     </html>

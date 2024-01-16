@@ -13,8 +13,7 @@ const skills: Skill[] = [
     { skill: "React" },
     { skill: "Redux" },
     { skill: "Next.js" },
-    { skill: "jQuery" },
-    { skill: "Tailwind CSS" },
+    { skill: "Tailwind" },
     { skill: "Styled Components" },
     { skill: "Sass" },
     { skill: "SQL" },
@@ -25,6 +24,8 @@ const skills: Skill[] = [
     { skill: "Webpack" },
     { skill: "AWS Services" },
     { skill: "Docker" },
+    { skill: 'Mocha' },
+    { skill: 'Chai' },
     { skill: "Git" },
     { skill: "GitHub" },
     { skill: "Github Actions" },
@@ -32,7 +33,7 @@ const skills: Skill[] = [
 
 const AboutSection = (): JSX.Element => {
     return (
-        <section id="about">
+        <section id="about" className="section">
             <div className="mt-12 pb-12 md:pt-28">
                 <h1 className="text-center font-bold text-4xl pb-6">
                     About Me
@@ -46,11 +47,11 @@ const AboutSection = (): JSX.Element => {
                             <span className="font-bold text-highlight">{"highly ambitious"}</span>,
                             <span className="font-bold text-highlight">{" self-motivated"}</span>, and
                             <span className="font-bold text-highlight">{" driven"}</span> software engineer
-                            based in Orange County, CA.
+                            based in Los Angeles, CA.
                         </p>
                         <br />
                         <p>
-                            My journey began at California State University, Long Beach, where I earned a BA in History. I shifted gears from the events industry to immerse myself in the world of software engineering. Embracing a rapid learning curve, I successfully completed a Coding Advanced Immersive Program, paving the way for my transition into the tech sphere.
+                            My journey began at California State University, Long Beach, where I earned a BA in History. I successfully completed a Coding Advanced Immersive Program, paving the way for my transition into the tech sphere. I'm adept at quickly learning new technologies and have experience in building web applications to create efficient, expansible user-curated experiences.
                         </p>
                         <br />
                         <p>
@@ -59,7 +60,7 @@ const AboutSection = (): JSX.Element => {
                         <br />
                         <p>
                             I am committed to unraveling my {" "}
-                            <span className="font-bold text-highlight">
+                            <span className="font-bold bg-gradient-to-r from-violet-500 via-green-500 to-pink-600 inline-block text-transparent bg-clip-text">
                                 boundless potential and passion
                             </span>{" "}
                             within the dynamic tech realm. I am excited to see where my career takes me and am

@@ -2,31 +2,31 @@
     {
         "id": 1,
         "name": "React Labyrinth",
-        "description": "VSCode Extension to visualize component type hierarchy tree, assists in the transition to React Server Components, and data comparisons of SEO and FCP in RSC and RCC.",
+        "description": "VSCode Extension to visualize component-type hierarchy tree upon single file uplaod, assists in the transition to/and from React Server Components and Client Components.",
         "github": "https://github.com/oslabs-beta/React-Labyrinth"
     },
     {
         "id": 2,
         "name": "Recipe Roulette V.2",
-        "description": "Iteration of RecipeRoulette, a Recipe Sharing Application. Integration of user profile with ability to star favorite recipes, access nutritional labels, and search by ingredient.",
+        "description": "Iteration of Recipe Roulette, a Recipe Sharing Application. Newly integrated user profiles with ability to star favorite recipes, access nutritional labels, upload personal recipes, and search by ingredient.",
         "github": "https://github.com/ash-t-luu/RecipeRouletteV.2"
     },
     {
         "id": 3,
         "name": "Co-Sync",
-        "description": "Co-Sync is a SCRUM app. Our goal is to help teams efficiently and seamlessly manage their projects and tickets through teamwork and collaboration.",
+        "description": "Co-Sync is a SCRUM app for cross-functional teams. Our goal is to help teams efficiently and seamlessly manage their projects and tickets through teamwork and collaboration.",
         "github": "https://github.com/ash-t-luu/Co-Sync"
     },
     {
         "id": 4,
         "name": "Pet Health Online",
-        "description": "Pet Health Online is a web application that allows you to view your pet's health records and vaccination due dates. Supports one-to-many relationships for owners and multiple pets.",
+        "description": "Pet Health Online is a web application that allows you to view your pet's health records and vaccination due dates. Supports one-to-many relationships for owners and pets.",
         "github": "https://github.com/ash-t-luu/Pet-Health-Online"
     },
     {
         "id": 5,
         "name": "To-Do List",
-        "description": "A to-do list created using DOM Manipulation and implementation of Google OAuth.",
+        "description": "A to-do list built upon a deep-dive on DOM Manipulation and implementation of Google OAuth.",
         "github": "https://github.com/ash-t-luu/to-do-list"
     }
 ]

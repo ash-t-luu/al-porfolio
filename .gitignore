@@ -7,8 +7,7 @@
 .yarn/install-state.gz
 
 # data
-/public/projects.json
-/public/al-headshot.jpg
+/public
 
 # testing
 /coverage
@@ -38,3 +37,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# unused files
+./app/api

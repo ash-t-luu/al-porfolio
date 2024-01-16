@@ -1,11 +1,21 @@
-import { ProjectProps } from "@/app/types/types"
 import { Project } from "@/app/types/types"
 import Link from "next/link"
 import { BsGithub } from "react-icons/bs"
+import { promises as fs } from 'fs';
 
-export default async function ProjectSection({ projects }: ProjectProps) {
+export default async function ProjectSection() {
+
+    async function fetchData() {
+        'use server'
+        const file = await fs.readFile(process.cwd() + '/app/projects.json', 'utf8');
+        const data = JSON.parse(file);
+        return data;
+    }
+
+    const projects = await fetchData();
+
     return (
-        <section id='projects'>
+        <section id='projects' className="section">
             <div className="mt-12 pb-12 md:pt-20">
                 <h1 className="text-center font-bold text-4xl pb-6">Projects
                     <hr className="w-6 h-1 mx-auto my-4 bg-secondHighlight border-0 rounded mt-5"></hr>

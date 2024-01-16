@@ -30,8 +30,8 @@ const HeroSection = (): JSX.Element => {
                         <span className="font-semibold text-highlight">
                             Software Engineer{" "}
                         </span>
-                        based in Orange County, CA. Working towards creating software that
-                        makes life easier and more meaningful.
+                        based in Los Angeles, CA and I build software to
+                        make life easier and more meaningful.
                     </p>
                     <div className="flex flex-row items-center md:justify-start sm:justify-center space-x-2 mb-1">
                         <a
