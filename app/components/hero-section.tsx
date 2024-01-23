@@ -44,7 +44,7 @@ const HeroSection = (): JSX.Element => {
                                 size={30} />
                         </a>
                         <a
-                            href='https://www.linkedin.com/in/ashley-luu-98837620b/'
+                            href='www.linkedin.com/in/ashley-t-luu/'
                             rel='noreferrer'
                             target='_blank'
                         >
