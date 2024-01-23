@@ -2,13 +2,13 @@
     {
         "id": 1,
         "name": "React Labyrinth",
-        "description": "VSCode Extension to visualize component-type hierarchy tree upon single file uplaod, assists in the transition to/and from React Server Components and Client Components.",
+        "description": "VSCode Extension to visualize component-type hierarchy tree upon single file upload, assists in the transition to/and from React Server Components and Client Components.",
         "github": "https://github.com/oslabs-beta/React-Labyrinth"
     },
     {
         "id": 2,
         "name": "Recipe Roulette V.2",
-        "description": "Iteration of Recipe Roulette, a Recipe Sharing Application. Newly integrated user profiles with ability to star favorite recipes, access nutritional labels, upload personal recipes, and search by ingredient.",
+        "description": "Iteration of Recipe Roulette, a Recipe Sharing Application. Newly integrated user profiles with the ability to star favorite recipes, access nutritional labels, upload personal recipes, and search by ingredient.",
         "github": "https://github.com/ash-t-luu/RecipeRouletteV.2"
     },
     {
