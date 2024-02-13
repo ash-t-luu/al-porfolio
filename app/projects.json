@@ -25,8 +25,8 @@
     },
     {
         "id": 5,
-        "name": "To-Do List",
-        "description": "A to-do list built upon a deep-dive on DOM Manipulation and implementation of Google OAuth.",
-        "github": "https://github.com/ash-t-luu/to-do-list"
+        "name": "Valentine's Day App",
+        "description": "A simple Valentine's Day application to send to your friends and family.",
+        "github": "https://github.com/ash-t-luu/valentines"
     }
 ]
