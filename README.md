@@ -1,5 +1,3 @@
-# Ashley Luu Portfolio Website
-
 # __Table of Contents__
 1. [Overview](#overview)
 2. [Features & Integrations](#features)
