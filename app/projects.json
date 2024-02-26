@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "React Labyrinth",
-        "description": "VSCode Extension to visualize component-type hierarchy tree upon single file upload, assists in the transition to/and from React Server Components and Client Components.",
+        "description": "React Labyrinth, a VS Code Extension, generates a hierarchical tree of React Components and identifies the component type with a single file upload.",
         "github": "https://github.com/oslabs-beta/React-Labyrinth"
     },
     {
@@ -22,11 +22,5 @@
         "name": "Pet Health Online",
         "description": "Pet Health Online is a web application that allows you to view your pet's health records and vaccination due dates. Supports one-to-many relationships for owners and pets.",
         "github": "https://github.com/ash-t-luu/Pet-Health-Online"
-    },
-    {
-        "id": 5,
-        "name": "To-Do List",
-        "description": "A to-do list built upon a deep-dive on DOM Manipulation and implementation of Google OAuth.",
-        "github": "https://github.com/ash-t-luu/to-do-list"
     }
 ]

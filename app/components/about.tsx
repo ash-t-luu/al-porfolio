@@ -6,29 +6,31 @@ type Skill = {
 }
 
 const skills: Skill[] = [
-    { skill: "HTML" },
-    { skill: "CSS" },
+    { skill: "HTML5" },
+    { skill: "CSS3" },
     { skill: "JavaScript" },
     { skill: "TypeScript" },
-    { skill: "React" },
+    { skill: "React.js" },
     { skill: "Redux" },
     { skill: "Next.js" },
-    { skill: "Tailwind" },
+    { skill: "TailwindCSS" },
     { skill: "Styled Components" },
     { skill: "Sass" },
+    { skill: "Node.js" },
+    { skill: "Express.js" },
     { skill: "SQL" },
-    { skill: "Node" },
-    { skill: "Express" },
+    { skill: "MySQL" },
     { skill: "PostgreSQL" },
     { skill: "MongoDB" },
     { skill: "Webpack" },
-    { skill: "AWS Services" },
+    { skill: "AWS (S3, EC2, EBN)" },
+    { skill: "Azure Pipelines" },
     { skill: "Docker" },
-    { skill: 'Mocha' },
-    { skill: 'Chai' },
+    { skill: "Jest" },
+    { skill: "Mocha" },
+    { skill: "Chai" },
     { skill: "Git" },
     { skill: "GitHub" },
-    { skill: "Github Actions" },
 ]
 
 const AboutSection = (): JSX.Element => {
@@ -43,7 +45,7 @@ const AboutSection = (): JSX.Element => {
                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
                     <div className="md:w-1/2 ">
                         <p>
-                            Hi, my name is Ashley and I am a{" "}
+                            Hi, I&#39;m Ashley and I am a{" "}
                             <span className="font-bold text-highlight">{"highly ambitious"}</span>,
                             <span className="font-bold text-highlight">{" self-motivated"}</span>, and
                             <span className="font-bold text-highlight">{" driven"}</span> software engineer
