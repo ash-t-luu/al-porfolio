@@ -22,5 +22,11 @@
         "name": "Pet Health Online",
         "description": "Pet Health Online is a web application that allows you to view your pet's health records and vaccination due dates. Supports one-to-many relationships for owners and pets.",
         "github": "https://github.com/ash-t-luu/Pet-Health-Online"
+    },
+    {
+        "id": 5,
+        "name": "Valentine's Day App",
+        "description": "A simple Valentine's Day application to send to your friends and family.",
+        "github": "https://github.com/ash-t-luu/valentines"
     }
 ]
